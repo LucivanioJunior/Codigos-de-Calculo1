@@ -10,15 +10,12 @@ def derivada_diferencas_finitas(f, x, h=1e-5, tipo='centrada'):
     else:
         raise ValueError("Tipo inválido")
 
-# Defina aqui a função que deseja derivar
 def func(x):
     return math.sin(x)  # exemplo: sin(x)
 
-# Defina o ponto de derivação e o passo h
 x = math.pi / 4
 h = 0.0001
 
-# Calcule a derivada
 resultado = derivada_diferencas_finitas(func, x, h, tipo='centrada')
 
 print(resultado)
